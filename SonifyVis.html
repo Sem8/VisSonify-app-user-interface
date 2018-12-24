@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link href="SonifyVis.css" type="text/css" rel="stylesheet">
+    <title> Visonify</title>
+  </head>
+
+  <body>
+    <img src="Hear_and_see.png" class="EyeEar" alt="eye and ear" width="150" height="150">
+    <div class="header">
+      <h1>Visualize & Sonify your data</h1>
+    </div>
+    <img src="Hear_and_see.png" class="EyeEarII" alt="eye and ear" width="150" height="150">
+    <div class="subheader">
+      <h2>See what your data looks like then hear what your data sounds like!</h2>
+      <img src="Hear_see_experience.png" class="HearSeeExperience" alt="Hear see and experience" width="600" height ="120">
+    </div>
+
+    <div class="upload">
+      <h2 id="categorize">1. Upload</h2>
+      <div class="uploadButton">
+      <input type="file" id="myFile">
+      <script>
+function myFunction() {
+    var x = document.getElementById("myFile");
+  }
+</script>
+</div>
+    </div>
+
+    <div class="visualTuning">
+      <h2 id="categorize">2. Visualization Tuning</h2>
+      <h4>Set you Visualization Tuning parameters here:</h4>
+      <button class="dropbtn">I want my data shown as</button>
+      <div class="dropdown-content">
+        <a href="#">Bubble Chart</a>
+        <a href="#">Heat Map</a>
+        <a href="#">Line Graph</a>
+        <a href="#">etc</a>
+      </div>
+    </div>
+
+    <div class="sonificationTuning">
+      <h2 id="categorize">3. Sonification Tuning</h2>
+      <h4>Set you Sonification Tuning parameters here:</h4>
+      <button class="dropbtn">I want to hear my data according to</button>
+      <div class="dropdown-content">
+      <a href="#">Pitch</a>
+        <a href="#">Tempo</a>
+        <a href="#">timber</a>
+        <a href="#">etc</a>
+      </div>
+    </div>
+
+    <div class="output">
+      <h2>Output</h2>
+    </div>
+    <div id="visualOutput">
+      <h3>Visual Output:</h3>
+    </div>
+
+    <div id="SoundOutput">
+      <h3>Sound Output:</h3>
+    </div>
+
+  </body>
+</html>

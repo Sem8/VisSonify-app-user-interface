@@ -1,0 +1,131 @@
+body {
+  margin: 0 auto;
+  font-family: Arial;
+  background: linear-gradient(#edc4c4, #f9ebeb);
+  width: 1200px;
+  height: 1200px;
+  display: grid;
+  position: relative;
+  grid-gap: 20px;
+  grid-template: repeat(12, 1fr) / repeat(12, 1fr)
+  }
+.header {
+  font-family: Arial;
+  font-size: 24px;
+  color: #A52A2A;
+  margin: auto;
+  padding: 1px 20px;
+  text-align: center;
+  background-color: #FAFAD2;
+  border-radius: 5px;
+  border: 2px #000000 solid;
+  grid-row: 1 / 2;
+  grid-column: 2 / 11;
+}
+.subheader {
+  color: #A52A2A;
+  margin: auto;
+  text-align: center;
+  font-family: Arial;
+  font-size: 18px;
+  text-shadow: 1px 1px #FF6347;
+  grid-row: 2 / 3;
+  grid-column: 1 / 13;
+}
+
+#categorize {
+  display: inline;
+  width: 600px;
+  padding: 5px 15px;
+  border: 2px #000000 solid;
+  border-radius: 5px;
+  background-color: #ffb3b3;
+  margin: auto;
+  font-size: 22px;
+  color: #660000;
+}
+.uploadButton {
+  padding: 20px;
+  margin: auto;
+}
+.upload {
+  grid-row: 3 / 4;
+  grid-column: 1 / 4;
+  background-color: #FAFAD2;
+}
+.visualTuning {
+  grid-row: 4 / 8;
+  grid-column: 1 / 4;
+  background-color: #FAFAD2;
+  
+  }
+.sonificationTuning {
+  grid-row: 8 / 13;
+  grid-column: 1 /4;
+  background-color: #FAFAD2;
+  
+}
+.output {
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+  grid-row: 3 / 4;
+  grid-column: 5 / 13;
+  border: 2px #000000 solid;
+  border-radius: 8px;
+  background-color: #ff6666;
+  padding: 1px 100px;
+}
+#visualOutput {
+  grid-row: 4 / 10;
+  grid-column: 5 / 13;
+  border: 2px #000000 solid;
+  text-align: center;
+}
+#SoundOutput {
+  grid-row: 10 / 13;
+  grid-column: 5 / 13;
+  border: 2px #000000 solid;
+  text-align: center;
+}
+.dropbtn {
+  background-color: #A52A2A;
+  color: #FFFFFF;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.visualTuning, .sonificationTuning {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  }
+  .dropdown-content a {
+    color: #000000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-content a:hover {background-color: 	#C0C0C0;
+    z-index: 1;
+}
+  .visualTuning:hover .dropdown-content {
+    display: block;
+  }
+  .visualTuning:hover .dropbtn {
+    background-color: #e08585;
+  }
+  .sonificationTuning:hover .dropdown-content {
+    display: block;
+  }
+  .sonificationTuning:hover .dropbtn {
+    background-color: #e08585;
+  }
